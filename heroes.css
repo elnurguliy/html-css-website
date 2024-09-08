@@ -6,7 +6,8 @@
 
 .explore-text h2 {
     font-size: 24px;
-    color: #333; /* Du kan justera färgen här */
+    color: #2c6d86; /* Du kan justera färgen här */
+    text-transform: uppercase;
 }
 
 
@@ -25,20 +26,67 @@
     /* Adjust as needed */
 }
 
-.hero-text {
-    max-width: 50%;
-    padding-left: 20px;
+.hero-ironclad .hero-text h2 {
+    font-size: 30px; /* Ändra storlek på rubriken */
+    font-weight: bold; /* Gör rubriken fetstil */
+    color: #2c6d86; /* Välj en passande färg */
+    text-align: left; /* Justera texten till vänster */
+    margin-bottom: 10px; /* Avstånd under rubriken */
+}
+
+.hero-ironclad .hero-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #555;
+    text-transform: uppercase;
+
+}
+
+.hero-ironclad .hero-text p {
+    font-size: 18px; /* Textstorlek för paragrafen */
+    line-height: 1.5; /* Gör texten mer läsbar */
     font-style: italic;
-    font-family: rubik, helvetica, arial, sans-serif;;
-    /* Adjust as needed */
+    font-family: rubik, helvetica, arial, sans-serif;
+    color: #333; /* Standard textfärg */
+    margin: 0 auto; /* Centrera paragrafen */
+    width: 80%; /* Justera bredden på textblocket */
+    text-align: justify; /* Jämna ut texten till båda kanterna */
 }
 
-.hero-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.spacing {
+    height: 50px; /* Justera höjden efter behov */
 }
 
-.hero-text p {
-    font-size: 16px;
-    line-height: 1.5;
+
+.hero-KOTL .hero-text h2 {
+    font-size: 30px; /* Ändra storlek på rubriken */
+    font-weight: bold; /* Gör rubriken fetstil */
+    color: #2c6d86; /* Välj en passande färg */
+    text-align: left; /* Centrera texten */
+    margin-bottom: 10px; /* Avstånd under rubriken */
+}
+
+.hero-KOTL .hero-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(181, 153, 0);
+    text-transform: uppercase;
+
+}
+
+.hero-KOTL .hero-text p {
+    font-size: 18px; /* Textstorlek för paragrafen */
+    line-height: 1.5; /* Gör texten mer läsbar */ 
+    font-style: italic;
+    font-family: rubik, helvetica, arial, sans-serif;
+    color: #333; /* Standard textfärg */
+    margin: 0 auto; /* Centrera paragrafen */
+    width: 80%; /* Justera bredden på textblocket */
+    text-align: justify; /* Jämna ut texten till båda kanterna */
 }

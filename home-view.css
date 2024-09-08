@@ -1,0 +1,63 @@
+/* Gemensam stil för h2 och h3 */
+.description-text h2,
+.description-text h3 {
+    display: flex;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #2c5d6f;
+    font-size: 20px; /* Textstorlek för h2 och h3 */
+    line-height: 1.5; /* Gör texten mer läsbar */
+    margin: 0 auto; /* Centrera elementet */
+    width: 100%; /* Justera bredden på textblocket */
+}
+
+.description-text h3 {
+    font-size: 16px;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* Wrapper for description text class*/
+.description-text {
+    max-width: 600px;
+    padding: 0 20px;
+    margin-bottom: 20px; /* Mellanrum mellan sektionerna */
+}
+
+/* Vänsterplacerad sektion (standard) */
+.description-text.left {
+    text-align: left;
+    margin-left: 0;
+}
+
+/* Högerplacerad sektion */
+.description-text.right {
+    margin-left: auto; /* Flyttar sektionen till höger */
+    margin-right: 0;
+}
+
+/* Stil för rubriker */
+.description-text h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Stil för text */
+.description-text p, .description-text i {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    color: #333;
+    margin-top: 10px;
+}
+
+.styled-in-text-link {
+    text-decoration: none;
+    color: #5285ac; /* Anger att länken alltid ska vara blå */
+}
+
+.styled-in-text-link:hover {
+    text-decoration: underline;
+}
+
+

@@ -12,7 +12,6 @@ body {
     max-width: 1200px; /* Bestämmer den maximala bredden på innehållet */
     margin: 0 auto; /* Centrerar innehållet horisontellt */
     padding: 0; /* Lägg till padding för lite extra utrymme på insidan */
-    box-sizing: border-box;
 }
 
 /* Flexbox container för header */
@@ -49,92 +48,8 @@ body {
     font-size: 13px;
     /* Storlek på texten */
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Brush Strokes', sans-serif;                                       
 }
-
-/* Bevara stilarna för headerns "Sign Up"-knapp */
-.sign-up {
-    display: inline-block;
-    background-color: #2c6d86;
-    /* Samma bakgrundsfärg som innan */
-    border: none;
-    /* Ingen kantlinje */
-    color: white;
-    /* Textfärg */
-    padding: 10px 20px;
-    /* Padding som du hade för knappen */
-    border-radius: 5px;
-    /* Rundade hörn */
-    cursor: pointer;
-    /* Visar pekaren som en hand vid hover */
-    font-size: 16px;
-    /* Samma textstorlek */
-    text-transform: uppercase;
-    /* Versaler */
-    text-align: center;
-    /* Centrerar texten */
-    text-decoration: none;
-    /* Tar bort understrykning */
-    margin-top: 10px;
-    /* Marginal för att återfå utrymmet */
-    margin-bottom: 10px;
-    /* Marginal nedåt */
-    width: 150px;
-    /* Samma bredd som innan */
-}
-
-/* Specifik stil för knappen i formuläret, för att undvika påverkan på headerknappen */
-.form-submit-button {
-    background-color: #2c6d86;
-    /* Bakgrundsfärg för knappen */
-    border: none;
-    /* Tar bort standardkanterna */
-    color: white;
-    /* Textfärg på knappen */
-    padding: 10px 20px;
-    /* Padding inuti knappen */
-    border-radius: 5px;
-    /* Rundar hörnen på knappen */
-    cursor: pointer;
-    /* Visar en pekare när man hovrar över knappen */
-    font-size: 16px;
-    /* Textstorlek på knappen */
-    text-transform: uppercase;
-    /* Gör texten på knappen versaler */
-    margin-top: 10px;
-    /* Övre marginal för knappen */
-    margin-bottom: 10px;
-    /* Nedre marginal för knappen */
-    width: 150px;
-    /* Anger knapplängd */
-}
-
-/* Stil för signup-formuläret */
-#signup-form {
-    margin: 0 auto;
-    /* Centrerar formuläret horisontellt */
-    padding: 20px;
-    /* Padding runt formuläret */
-    background-color: #e1d7c6;
-    /* Bakgrundsfärg för formuläret */
-    border-radius: 5px;
-    /* Rundade hörn på formuläret */
-    margin-top: 50px;
-    /* Marginal överst på formuläret */
-    text-align: center;
-    /* Centrerar texten i formuläret */
-}
-
-/* Stil för input-fält i formuläret */
-#signup-form input {
-    margin: 10px 0;
-    /* Marginal runt input-fält */
-    padding: 10px;
-    /* Padding inuti input-fält */
-    width: 30%;
-    /* Bredd på input-fält */
-}
-
 
 /* Stil för språkväxlaren */
 .language-selector {
@@ -243,11 +158,138 @@ body {
     /* Ändra textfärg till vit vid hover */
 }
 
+.sign-up {
+    display: inline-block;
+    background-color: #2c6d86;
+    color: white; /* White text */
+    padding: 10px 40px; /* Padding for the button */
+    text-decoration: none; /* No underline on the link */
+    text-transform: uppercase;
+    border-radius: 7px; /* Rounded corners */
+    font-size: 16px; /* Slightly larger font size */
+    margin-top: 10px;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* Styling för hela footern */
+.site-footer {
+    background-color: #a5c2c7; /* Bakgrundsfärg */
+    color: white; /* Textfärg */
+    padding: 20px; /* Utrymme ovan och nedan */
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Huvudcontainer för footern */
+.footer-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Delar upp footern i två delar */
+    align-items: center;
+}
+
+/* Första behållaren: Loggor med länkar */
+.footer-top {
+    width: 100%; /* Täcker hela sidbredden */
+    display: flex;
+    justify-content: center; /* Centrerar loggorna */
+    align-items: center;
+    margin-bottom: 30px; /* Mellanrum mot nederdelen */
+}
+
+.social-icon {
+    color: #fff; /* Färg på ikonen, justera efter behov */
+    font-size: 24px; /* Storlek på ikonen, justera efter behov */
+    margin-right: 15px; /* Avstånd mellan ikonerna om du har fler */
+    text-decoration: none; /* Tar bort eventuell understrykning */
+}
+
+/* Valfritt: Stil för att förändra ikonfärgen vid hovring */
+.social-icon:hover {
+    color: #1877F2; /* Ändrar färg vid hovring */
+}
+
+/* Flex för loggorna */
+.footer-logo-list {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center; /* Centrerar loggorna horisontellt */
+    gap: 20px; /* Mellanrum mellan loggorna */
+}
+
+/* Loggor */
+.footer-logo-list-item {
+    margin: 0 10px; /* Mellanrum mellan loggor */
+}
+
+/* Styla store-ikoner */
+.store-icon {
+    margin-left: 20px; /* Avstånd mellan store-ikoner */
+}
+
+/* Om du vill styla store-ikonerna specifikt */
+.store-icon img {
+    width: 100px; /* Justera storlek på store-ikonerna efter behov */
+    height: auto;
+}
+
+
+/* Styling för varje logotyp */
+.logo-link-nekki {
+    background: url('Replicated_website_photos/Nekki_logo.svg') no-repeat center;
+    background-size: contain;
+    width: 100px; /* Bredden på logotypen */
+    height: 60px; /* Höjden på logotypen */
+    display: block;
+}
+
+.logo-link-sfa {
+    background: url('Replicated_website_photos/SF4_ARENA_LOGO.webp') no-repeat center;
+    background-size: contain;
+    width: 120px; /* Bredden på logotypen */
+    height: 80px; /* Höjden på logotypen */
+    display: block;
+}
+
+.logo-link-sf3 {
+    background: url('Replicated_website_photos/SF3Logo.png') no-repeat center;
+    background-size: contain;
+    width: 120px; /* Bredden på logotypen */
+    height: 80px; /* Höjden på logotypen */
+    display: block;
+}
+
+/* Andra behållaren: Textinformation */
+.footer-bottom {
+    width: 100%; /* Täcker hela sidbredden */
+    text-align: center; /* Centrera texten */
+    font-size: 14px;
+    font-weight: 600;
+    color: #000; /* Mörk text för bättre kontrast */
+    margin-top: 20px; /* Mellanrum ovanför copyright-texten */
+}
+
+/* Anpassa avståndet mellan footer-top och footer-bottom */
+.footer-bottom p {
+    margin: 0;
+}
+
 /* Media Queries */
+@media (min-width: 768px) {
+    .site-footer {
+        margin-top: 50px; /* Extra avstånd på större skärmar */
+    }
+}
+
+
+/* För oordnade listor på större skärmar */
 @media screen and (min-width: 48em) {
     .unordered {
-        width: 100%;
-        /* Behåller bredden vid större skärmar */
+        width: 100%; /* Behåller bredden vid större skärmar */
     }
 }
 
