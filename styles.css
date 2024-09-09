@@ -3,50 +3,37 @@ body {
     background-color: #f6f7f0;
     padding: 0;
     margin: 0;
-    /* Tar bort standardmarginaler runt hela sidan */
     font-family: Arial, sans-serif;
-    /* Anger standardtypsnitt för sidan */
 }
 
 .wrapper {
-    max-width: 1200px; /* Bestämmer den maximala bredden på innehållet */
-    margin: 0 auto; /* Centrerar innehållet horisontellt */
-    padding: 0; /* Lägg till padding för lite extra utrymme på insidan */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* Flexbox container för header */
 .header {
     display: flex;
-    /* Använder flexbox för att positionera innehåll */
     justify-content: space-between;
-    /* Fördelar utrymmet mellan logotyp och "Sign Up"-knapp */
     align-items: center;
-    /* Centrerar innehållet vertikalt */
     padding: 10px 20px;
-    /* Padding runt headern */
     background-color: #f6f7f0;
-    /* Bakgrundsfärg för headern */
     color: white;
-    /* Textfärg i headern */
 }
 
 /* Stil för logotypen */
 .logo img {
     display: flex;
     max-height: 50px;
-    /* Begränsar höjden på logotypen */
     align-items: center;
-    /* Centrerar logotypen vertikalt */
 }
 
 /* Stil för texten bredvid loggan */
 .header-text {
     flex-grow: 1;
-    /* Gör att texten tar upp utrymme mellan loggan och knappen */
     color: #2c6d86;
-    /* Textfärg för texten */
     font-size: 13px;
-    /* Storlek på texten */
     text-transform: uppercase;
     font-family: 'Brush Strokes', sans-serif;                                       
 }
@@ -54,128 +41,95 @@ body {
 /* Stil för språkväxlaren */
 .language-selector {
     display: flex;
-    /* Använder flexbox för språkväxlaren */
     margin-bottom: 10px;
-    /* Utrymme mellan språkväxlare och knappen */
 }
 
 .language-selector a {
     color: rgb(0, 100, 107);
-    /* Textfärg för språkval */
     text-decoration: none;
-    /* Tar bort understrykning */
     margin-left: 10px;
-    /* Avstånd mellan språkval */
 }
 
 /* Stil för navigeringsmeny */
 .main-menu {
     background-color: #f4f4f4;
-    /* Bakgrundsfärg för navigeringsmenyn */
     padding: 10px 0;
-    /* Padding runt navigeringsmenyn */
 }
 
 .main-menu ul {
     list-style-type: none;
-    /* Tar bort standardpunktlista */
     margin: 0;
-    /* Tar bort marginaler */
     padding: 0;
-    /* Tar bort padding */
     display: flex;
-    /* Gör att listobjekten placeras horisontellt */
     justify-content: space-between;
-    /* Fördelar objekten jämnt över hela bredden */
     align-items: center;
-    /* Centrerar objekten vertikalt inom navigeringsmenyn */
     width: 100%;
-    /* Se till att menyn tar upp hela bredden på skärmen */
 }
 
 .unordered {
     font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
-    /* Anger typsnitt för listan */
     width: 100%;
-    /* Se till att listan tar upp hela bredden */
     padding: 0;
-    /* Tar bort padding för att undvika oväntade indrag */
     margin: 0;
-    /* Tar bort marginaler för att undvika oväntade indrag */
 }
 
 .main-menu li {
     flex: 1;
-    /* Gör varje menyalternativ lika brett */
     text-align: center;
-    /* Centrerar texten i varje menyalternativ */
     text-transform: uppercase;
-    /* Gör texten versaler */
 }
 
 .main-menu li a {
     color: #08445a;
-    /* Textfärg för länkar */
     text-decoration: none;
-    /* Tar bort understrykning från länkarna */
     display: block;
-    /* Gör att hela området runt texten är klickbart */
     padding: 15px 0;
-    /* Padding runt länkarna för att göra dem större och lättare att klicka */
     border-left: solid 2px #c0d3d4;
-    /* Vänster kantlinje för länkarna */
     background-color: #98b9c0;
-    /* Bakgrundsfärg för länkarna */
     transition: background-color 0.3s, color 0.3s;
-    /* Lägger till övergång för smidigare färgändring */
 }
 
 .main-menu li:first-child a {
     border-left: none;
-    /* Tar bort vänster kantlinje för första länken */
 }
 
 .main-menu li.active a {
     color: #f6f7f0;
-    /* Textfärg för aktiv länk */
     background-color: #2c5d6f;
-    /* Mörkare bakgrundsfärg för aktiv länk */
 }
 
 .main-menu a {
     text-decoration: none;
-    /* Tar bort understrykning från länkarna */
     color: #333;
-    /* Textfärg för länkarna */
     display: block;
-    /* Gör att hela området runt texten är klickbart */
 }
 
 .main-menu a:hover {
     background-color: #7ea7ad;
-    /* Bakgrundsfärg för länkar vid hover (lite mörkare) */
     color: #ffffff;
-    /* Ändra textfärg till vit vid hover */
 }
 
-.sign-up {
-    display: inline-block;
+.sign-up-knapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: #2c6d86;
-    color: white; /* White text */
-    padding: 10px 40px; /* Padding for the button */
-    text-decoration: none; /* No underline on the link */
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
     text-transform: uppercase;
-    border-radius: 7px; /* Rounded corners */
-    font-size: 16px; /* Slightly larger font size */
+    border-radius: 7px;
     margin-top: 10px;
+    padding: 1em 2em;
+    font-size: 1em;
 }
+
 /*----------------------------------------------------------------------------------------------*/
 /* Styling för hela footern */
-/* Styling för hela footern */
 .site-footer {
-    background-color: #a5c2c7; /* Bakgrundsfärg */
-    color: white; /* Textfärg */
-    padding: 20px; /* Utrymme ovan och nedan */
+    background-color: #a5c2c7;
+    color: white;
+    padding: 20px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -188,30 +142,43 @@ body {
 .footer-container {
     max-width: 1200px;
     display: flex;
-    flex-direction: column; /* Delar upp footern i två delar */
+    flex-direction: column;
     align-items: center;
 }
 
 /* Första behållaren: Loggor med länkar */
 .footer-top {
-    width: 100%; /* Täcker hela sidbredden */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Centrerar loggorna */
+    justify-content: center;
     align-items: center;
-    margin-bottom: 30px; /* Mellanrum mot nederdelen */
+    margin-bottom: 30px;
 }
 
 /* Social media ikoner */
-.social-icon {
-    color: #fff; /* Färg på ikonen, justera efter behov */
-    font-size: 24px; /* Storlek på ikonen, justera efter behov */
-    margin-right: 15px; /* Avstånd mellan ikonerna om du har fler */
-    text-decoration: none; /* Tar bort eventuell understrykning */
+.social-links {
+    display: flex;
+    align-items: center;
 }
 
-/* Valfritt: Stil för att förändra ikonfärgen vid hovring */
-.social-icon:hover {
-    color: #1877F2; /* Ändrar färg vid hovring */
+/* Styling för varje social ikon */
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-icon-fb:hover {
+    color: #1877F2;
+}
+
+.social-icon-twitter:hover {
+    color: #1DA1F2;
+}
+
+.social-icon-yt:hover {
+    color: #FF0000;
 }
 
 /* Flex för loggorna */
@@ -219,23 +186,24 @@ body {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    justify-content: center; /* Centrerar loggorna horisontellt */
-    gap: 20px; /* Mellanrum mellan loggorna */
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Loggor */
 .footer-logo-list-item {
-    margin: 0 10px; /* Mellanrum mellan loggor */
+    margin: 0 10px;
 }
 
 /* Styla store-ikoner */
-.store-icon {
-    margin-left: 20px; /* Avstånd mellan store-ikoner */
+.store-icons {
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
 }
 
-/* Om du vill styla store-ikonerna specifikt */
-.store-icon img {
-    width: 100px; /* Justera storlek på store-ikonerna efter behov */
+.store-icons img {
+    width: 100px;
     height: auto;
 }
 
@@ -243,35 +211,35 @@ body {
 .logo-link-nekki {
     background: url('Replicated_website_photos/Nekki_logo.svg') no-repeat center;
     background-size: contain;
-    width: 100px; /* Bredden på logotypen */
-    height: 60px; /* Höjden på logotypen */
+    width: 100px;
+    height: 60px;
     display: block;
 }
 
 .logo-link-sfa {
     background: url('Replicated_website_photos/SF4_ARENA_LOGO.webp') no-repeat center;
     background-size: contain;
-    width: 120px; /* Bredden på logotypen */
-    height: 80px; /* Höjden på logotypen */
+    width: 120px;
+    height: 80px;
     display: block;
 }
 
 .logo-link-sf3 {
     background: url('Replicated_website_photos/SF3Logo.png') no-repeat center;
     background-size: contain;
-    width: 120px; /* Bredden på logotypen */
-    height: 80px; /* Höjden på logotypen */
+    width: 120px;
+    height: 80px;
     display: block;
 }
 
 /* Andra behållaren: Textinformation */
 .footer-bottom {
-    width: 100%; /* Täcker hela sidbredden */
-    text-align: center; /* Centrera texten */
+    width: 100%;
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
-    color: #000; /* Mörk text för bättre kontrast */
-    margin-top: 20px; /* Mellanrum ovanför copyright-texten */
+    color: #000;
+    margin-top: 20px;
 }
 
 /* Anpassa avståndet mellan footer-top och footer-bottom */
@@ -279,35 +247,52 @@ body {
     margin: 0;
 }
 
-
-
 /* Media Queries */
-@media (min-width: 768px) {
+/* För små skärmar, som mobiler */
+@media (max-width: 768px) {
     .site-footer {
-        margin-top: 50px; /* Extra avstånd på större skärmar */
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-logos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .store-icons {
+        margin-top: 20px;
     }
 }
-
 
 /* För oordnade listor på större skärmar */
 @media screen and (min-width: 48em) {
     .unordered {
-        width: 100%; /* Behåller bredden vid större skärmar */
+        width: 100%;
     }
 }
 
+/* Media query för mindre skärmar */
+@media (max-width: 768px) {
+    .sign-up-knapp {
+        padding: 0.8em 2.5em;
+        font-size: 0.9em;
+    }
+}
 
-/* 
-Grundläggande stil för hela sidan: Definierar grundläggande stilar för hela sidan, inklusive margin och font.
-Flexbox container för header: Stilar för headern som använder flexbox för layout.
-Stil för logotypen: Begränsar storleken på logotypbilden.
-Stil för "Sign Up"-knappen: Definierar utseendet och stilarna för knappen.
-Stil för språkväxlaren: Stilar för språkväxlaren, inklusive färg och marginaler.
-Stil för navigeringsmeny: Grundläggande stilar för navigeringsmenyn.
-Main-menu ul: Stilar för den horisontella listan i navigeringsmenyn.
-Unordered: Typsnitt och layout för menyns lista.
-Main-menu li: Stilar för listobjekten i navigeringsmenyn.
-Main-menu li a: Stilar för länkar i navigeringsmenyn, inklusive hover-effekter.
-Main-menu a: Allmänna stilar för länkar i navigeringsmenyn.
-Media Queries: Stilar för att anpassa layouten vid olika skärmstorlekar.
-*/
+@media (max-width: 480px) {
+    .sign-up-knapp {
+        padding: 0.6em 2.5em;
+        font-size: 0.8em;
+    }
+}
