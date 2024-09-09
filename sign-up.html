@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadow Fight Arena - Sign Up</title>
+    <!--Below is the link to the font for the title-->
     <link href="https://fonts.cdnfonts.com/css/brush-strokes" rel="stylesheet" href="styles.css">
+    <!--Below row is for the link of font awesome fb icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="icon" type="image/x-icon" href="Replicated_website_photos/sfa_loga.webp">
-    <link rel="stylesheet" href="sign-up.css"> 
+
+    <link rel="stylesheet" href="sign-up.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-    <body>
+<body>
 
-        <div class="wrapper">
-            <header class="header">
-                <div class="logo">
-                    <a href="home-view.html" target="_parent">
-                        <img src="Replicated_website_photos/SF4_ARENA_LOGO.webp" alt="SFA Logo">
-                    </a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="home-view.html" target="_parent">
+                    <img src="Replicated_website_photos/SF4_ARENA_LOGO.webp" alt="SFA Logo">
+                </a>
+            </div>
+
+            <div class="header-text">
+                <h1>Shadow Fight Arena</h1>
+            </div>
+
+            <div class="header-right">
+                <!-- Språkväxlare -->
+                <div class="language-selector">
+                    <a href="#">English</a>
+                    <a href="#">Svenska</a>
                 </div>
-                
-                <div class="header-text">
-                    <h1>Shadow Fight Arena</h1>
-                </div>
-    
-                <div class="header-right">
-                    <!-- Språkväxlare -->
-                    <div class="language-selector">
-                        <a href="#">English</a>
-                        <a href="#">Svenska</a>
-                    </div>
-                    <a href="sign-up.html" class="sign-up">Sign Up</a>
-                </div>
-            </header>
-    
-            <nav class="main-menu">
-                <ul class="unordered">
-                    <li><a href="home-view.html">Home</a></li>  <!-- Länk till huvudsidan -->
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="heroes.html">Heroes</a></li>
-                    <li><a href="press.html">Press</a></li>
-                </ul>
-            </nav>
-    
-            <div class="title">NEWSLETTER SIGNUP</div>
-    
-            <!-- Formulärstart med en klass för styling -->
-            <form action="#" class="join_form">
-                <!-- Email Input -->
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="id_email" class="form-control required" placeholder="Enter your email">
-                </div>
-                
-                <!-- Birthdate Title -->
-                <div class="form-birthdate-title">Birthdate</div>
-                <!-- Birthdate Input -->
-                <div class="form-row">
-                    <!-- Month Dropdown -->
-                    <div class="form-group form-group-col">
-                        <div class="dropdown-container">
-                            <select class="selectable" id="id_month" name="month" required>
-                                <option value="01">January</option>
-                                <option value="02">February</option>
-                                <option value="03">March</option>
-                                <option value="04">April</option>
-                                <option value="05">May</option>
-                                <option value="06">June</option>
-                                <option value="07">July</option>
-                                <option value="08">August</option>
-                                <option value="09">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <!-- Day Input -->
-                    <div class="form-group form-group-col">
-                        <input type="text" name="day" class="form-control required" id="id_day" placeholder="DD" maxlength="2" pattern="\d{2}">
-                    </div>
-                    
-                    <!-- Year Input -->
-                    <div class="form-group form-group-col">
-                        <input type="text" name="year" class="form-control required" id="id_year" placeholder="YYYY" maxlength="4" pattern="\d{4}">
+                <a href="sign-up.html" class="sign-up">Sign Up</a>
+            </div>
+        </header>
+
+        <nav class="main-menu">
+            <ul class="unordered">
+                <li><a href="home-view.html">Home</a></li> <!-- Länk till huvudsidan -->
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="heroes.html">Heroes</a></li>
+                <li><a href="press.html">Press</a></li>
+            </ul>
+        </nav>
+
+        <div class="title">NEWSLETTER SIGNUP</div>
+
+        <!-- Formulärstart med en klass för styling -->
+        <form action="#" class="join_form">
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="id_email" class="form-control required"
+                    placeholder="Enter your email">
+            </div>
+
+            <!-- Birthdate Title -->
+            <div class="form-birthdate-title">Birthdate</div>
+            <!-- Birthdate Input -->
+            <div class="form-row">
+                <!-- Month Dropdown -->
+                <div class="form-group form-group-col">
+                    <div class="dropdown-container">
+                        <select class="selectable" id="id_month" name="month" required>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
                     </div>
                 </div>
-                
-                <!-- Submit Button -->
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
-                
+
+                <!-- Day Input -->
+                <div class="form-group form-group-col">
+                    <input type="text" name="day" class="form-control required" id="id_day" placeholder="DD"
+                        maxlength="2" pattern="\d{2}">
+                </div>
+
+                <!-- Year Input -->
+                <div class="form-group form-group-col">
+                    <input type="text" name="year" class="form-control required" id="id_year" placeholder="YYYY"
+                        maxlength="4" pattern="\d{4}">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
         <footer class="site-footer">
             <div class="footer-container">
                 <!-- Första sektionen: SVG-bilder med länkar -->
                 <div class="footer-top">
-                    <div class="footer-logo-list">
+                    <nav class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </nav>
+
+                    <section class="footer-logos">
                         <div class="footer-logo-list-item">
                             <a href="https://nekki.com/" class="logo-link-nekki" target="_blank"></a>
                         </div>
-    
+
                         <div class="footer-logo-list-item">
                             <a href="https://shadowfight.com/" class="logo-link-sfa" target="_blank"></a>
                         </div>
-    
+
                         <div class="footer-logo-list-item">
                             <a href="https://shadowfight3.com/" class="logo-link-sf3" target="_blank"></a>
                         </div>
-                        <!-- Lägg till fler logo-link divs här vid behov -->
-                    </div>
+                    </section>
+
+                    <!-- Lägg till fler logo-link divs här vid behov -->
+
+                    <nav class="stores-icons">
+                        <a href="https://play.google.com/store" target="_blank" class="store-icon">
+                            <img src="path/to/playstore-icon.png" alt="Google Play">
+                        </a>
+                        <a href="https://www.apple.com/app-store/" target="_blank" class="store-icon">
+                            <img src="path/to/appstore-icon.png" alt="App Store">
+                        </a>
+                        <!-- Lägg till fler store-ikoner här -->
+                    </nav>
                 </div>
                 <!-- Andra sektionen: Copyright-information -->
                 <div class="footer-bottom">
-                    <p>&copy; 2018-2024, Nekki Limited. All rights reserved. 
-                        Shadow Fight Arena and its logo are Nekki trademarks or registered trademarks in the EU and elsewhere.
+                    <p>&copy; 2018-2024, Nekki Limited. All rights reserved.
+                        Shadow Fight Arena and its logo are Nekki trademarks or registered trademarks in the EU and
+                        elsewhere.
                         Product of Nekki
                     </p>
                 </div>
             </div>
         </footer>
-        </div>
-    
+    </div>
+
 </body>
+
 </html>

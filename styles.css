@@ -171,6 +171,7 @@ body {
 }
 /*----------------------------------------------------------------------------------------------*/
 /* Styling för hela footern */
+/* Styling för hela footern */
 .site-footer {
     background-color: #a5c2c7; /* Bakgrundsfärg */
     color: white; /* Textfärg */
@@ -200,6 +201,7 @@ body {
     margin-bottom: 30px; /* Mellanrum mot nederdelen */
 }
 
+/* Social media ikoner */
 .social-icon {
     color: #fff; /* Färg på ikonen, justera efter behov */
     font-size: 24px; /* Storlek på ikonen, justera efter behov */
@@ -213,7 +215,7 @@ body {
 }
 
 /* Flex för loggorna */
-.footer-logo-list {
+.footer-logos {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -236,7 +238,6 @@ body {
     width: 100px; /* Justera storlek på store-ikonerna efter behov */
     height: auto;
 }
-
 
 /* Styling för varje logotyp */
 .logo-link-nekki {
@@ -277,6 +278,8 @@ body {
 .footer-bottom p {
     margin: 0;
 }
+
+
 
 /* Media Queries */
 @media (min-width: 768px) {
