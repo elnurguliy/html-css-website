@@ -5,69 +5,76 @@
     font-size: 24px;
     font-weight: bold;
     color: #2c6d86;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 50px; /* Avstånd ovanför titeln */
+    margin-bottom: 20px; /* Avstånd nedanför titeln */
 }
 
 /* General form styling */
 .join_form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; /* Mellanrum mellan fälten i formuläret */
     width: 100%;
-    max-width: 500px;
-    margin: auto;
+    max-width: 500px; /* Maximal bredd på formuläret */
+    margin: auto; /* Centrerar formuläret horisontellt */
 }
 
+/* Form group styling */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Mellanrum under varje form-grupp */
 }
 
+/* Label styling */
 label {
     display: block;
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Mellanrum under etiketten */
 }
-/* Gör att alla input-fält och dropdown-menyer har samma grundinställningar */
+
+/* Styling for input fields and dropdown menus */
 .selectable, .form-control {
-    width: 100%; /* Gör fälten så breda som deras container tillåter */
+    width: 100%; /* Fyller sin container */
     padding: 10px; /* Inre avstånd för att ge fälten mer plats */
     font-size: 16px; /* Bekväm textstorlek */
     border: 1px solid #ccc; /* Kantlinje runt fälten */
     border-radius: 5px; /* Rundade hörn */
-    box-sizing: border-box; /* Förhindrar att padding spränger layouten */
-
+    box-sizing: border-box; /* Inkluderar padding i elementets totala bredd och höjd */
+    height: 3rem; /* Sätt en enhetlig höjd för alla fält */
+    padding: 0.rem; /* Justera padding */
 }
 
-/* Container för födelsedatumfälten */
+/* Container for birthdate fields */
 .form-row {
     display: flex; /* Flexbox för att rada upp elementen horisontellt */
     justify-content: space-between; /* Jämnt mellanrum mellan alla fält */
     gap: 10px; /* Extra mellanrum mellan varje fält */
-    margin-top: -10px;
+    margin-top: -10px; /* Justerar marginalen överst */
 }
 
-/* Varje kolumn i flex-layouten */
+/* Styling for each column in the flex layout */
 .form-group-col {
-    flex: 1; /* Gör att alla kolumner (månad, dag, år) har samma bredd */
+    flex: 1; /* Alla kolumner (månad, dag, år) har samma bredd */
 }
 
-/* Extra container för dropdown-menyn för att fylla sin kolumn */
+/* Extra container for dropdown menu to fill its column */
 .dropdown-container {
     width: 100%; /* Gör att dropdown-menyn fyller sin kolumn */
 }
 
-/* Styling for submit button */
-.submit-button {
+/* Styling for the submit button */
+input[type=submit] {
     padding: 10px;
-    text-transform: uppercase;
-    background-color: #2c6d86;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
+    text-transform: uppercase; /* Gör texten versaler */
+    background-color: #2c6d86; /* Bakgrundsfärg på knappen */
+    color: white; /* Textfärg på knappen */
+    border: none; /* Ingen kantlinje */
+    border-radius: 5px; /* Rundade hörn */
+    font-size: 16px; /* Textstorlek på knappen */
+    font-weight: bold; /* Fetstil på texten */
+    cursor: pointer; /* Pekare visar att det är en klickbar knapp */
+    width: 100%; /* Fyller sin container */
 }
 
+input[type=submit]:hover {
+    background-color: #004a67; /* Bakgrundsfärg på knappen */
+}

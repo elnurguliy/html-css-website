@@ -7,9 +7,9 @@
     <title>Shadow Fight Arena - Screenshoots</title>
     <!--Below is the link to the font for the title-->
     <link href="https://fonts.cdnfonts.com/css/brush-strokes" rel="stylesheet" href="styles.css">
-    <!--Below row is for the link of font awesome fb icon-->
+    <!--Below row is version link of "font awesome" icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <link rel="icon" type="image/x-icon" href="Replicated_website_photos/sfa_loga.webp">
 
     <link rel="stylesheet" href="styles.css">
@@ -37,7 +37,7 @@
                     <a href="#">Svenska</a>
                 </div>
                 <!-- "Sign Up"-knappen -->
-                <a href="sign-up.html" class="sign-up">Sign Up</a> <!-- Länk till din nya signup-sida -->
+                <a href="sign-up.html" class="sign-up-button">Sign Up</a> <!-- Länk till den nya signup-sida -->
             </div>
         </header>
 
@@ -80,16 +80,22 @@
                 <p class="image-description">Victory screen</p>
             </div>
             <div class="gallery-item">
-                <img src="Replicated_website_photos/Event_screen.webp" alt="Event_screen">
+                <img src="Replicated_website_photos/Event_screen.webp" alt="Event_screen" loading="lazy">
                 <p class="image-description">An Event in the game</p>
             </div>
             <div class="gallery-item">
-                <img src="Replicated_website_photos/JetvsLing.webp" alt="JetvsLing">
+                <img src="Replicated_website_photos/JetvsLing.webp" alt="JetvsLing" loading="lazy">
                 <p class="image-description"></p>
             </div>
             <div class="gallery-item">
-                <img src="Replicated_website_photos/YukkavsJack.webp" alt="YukkavsJack">
+                <img src="Replicated_website_photos/YukkavsJack.webp" alt="YukkavsJack" loading="lazy">
                 <p class="image-description"></p>
+            </div>
+            <div class="gallery-item">
+                <video controls><source src="Replicated_website_photos/teaser.MP4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+                <p class="image-description">Official Teaser</p>
             </div>
         </section>
 
@@ -108,8 +114,15 @@
                 <!-- Första sektionen: SVG-bilder med länkar -->
                 <div class="footer-top">
                     <nav class="social-links">
-                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <a href="https://www.facebook.com/shadowfightarena/" target="_blank" class="social-icon-fb">
                             <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/SFArenaGame" target="_blank" class="social-icon-twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCckHBcinJJKHKi9sBEpGARA" target="_blank"
+                            class="social-icon-yt">
+                            <i class="fa-brands fa-youtube"></i>
                         </a>
                     </nav>
 
@@ -129,12 +142,12 @@
 
                     <!-- Lägg till fler logo-link divs här vid behov -->
 
-                    <nav class="stores-icons">
-                        <a href="https://play.google.com/store" target="_blank" class="store-icon">
-                            <img src="path/to/playstore-icon.png" alt="Google Play">
+                    <nav class="store-icons">
+                        <a href="https://apps.apple.com/ca/app/shadow-fight-4-arena/id1479050948" target="_blank" class="store-icon">
+                            <img src="Replicated_website_photos/app-store.svg" alt="App Store">
                         </a>
-                        <a href="https://www.apple.com/app-store/" target="_blank" class="store-icon">
-                            <img src="path/to/appstore-icon.png" alt="App Store">
+                        <a href="https://play.google.com/store/apps/details?id=com.nekki.shadowfightarena" target="_blank" class="store-icon">
+                            <img src="Replicated_website_photos/play-store.svg" alt="Google Play">
                         </a>
                         <!-- Lägg till fler store-ikoner här -->
                     </nav>

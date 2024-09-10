@@ -1,34 +1,38 @@
+/*----------------------------------------------------------------------------------------------*/
+/* Explore sektionen */
 .explore-text {
     text-align: center;
-    margin-top: 40px; /* Justera för avstånd från menyraden */
+    margin-top: 40px; /* Avstånd från menyraden */
     margin-bottom: 20px; /* Avstånd mellan texten och hero-sektionen */
 }
 
 .explore-text h2 {
-    font-size: 24px;
-    color: #2c6d86; /* Du kan justera färgen här */
+    font-size: 25px;
+    color: #2c6d86; /* Justera färgen här */
     text-transform: uppercase;
 }
 
-
+/*----------------------------------------------------------------------------------------------*/
+/* Hero-sektionen */
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f6f7f0; /* Example background color */
+    background-color: #f6f7f0; /* Bakgrundsfärg */
 }
 
 .hero-image {
     max-width: 50%;
     height: auto;
-    margin-top: -100px;
-    /* Adjust as needed */
+    margin-top: -100px; /* Justera efter behov */
 }
 
+/*----------------------------------------------------------------------------------------------*/
+/* Hero Ironclad - Textstilar */
 .hero-ironclad .hero-text h2 {
     font-size: 30px; /* Ändra storlek på rubriken */
-    font-weight: bold; /* Gör rubriken fetstil */
+    font-weight: bold; /* Fetstil på rubriken */
     color: #2c6d86; /* Välj en passande färg */
     text-align: left; /* Justera texten till vänster */
     margin-bottom: 10px; /* Avstånd under rubriken */
@@ -40,32 +44,28 @@
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
-    color: #555;
+    color: #555; /* Färg för underrubriken */
     text-transform: uppercase;
-
 }
 
 .hero-ironclad .hero-text p {
     font-size: 18px; /* Textstorlek för paragrafen */
     line-height: 1.5; /* Gör texten mer läsbar */
     font-style: italic;
-    font-family: rubik, helvetica, arial, sans-serif;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
     color: #333; /* Standard textfärg */
     margin: 0 auto; /* Centrera paragrafen */
     width: 80%; /* Justera bredden på textblocket */
-    text-align: justify; /* Jämna ut texten till båda kanterna */
+    text-align: justify; /* Justera texten till båda kanterna */
 }
 
-.spacing {
-    height: 50px; /* Justera höjden efter behov */
-}
-
-
+/*----------------------------------------------------------------------------------------------*/
+/* Hero KOTL - Textstilar */
 .hero-KOTL .hero-text h2 {
     font-size: 30px; /* Ändra storlek på rubriken */
-    font-weight: bold; /* Gör rubriken fetstil */
+    font-weight: bold; /* Fetstil på rubriken */
     color: #2c6d86; /* Välj en passande färg */
-    text-align: left; /* Centrera texten */
+    text-align: left; /* Justera texten till vänster */
     margin-bottom: 10px; /* Avstånd under rubriken */
 }
 
@@ -75,18 +75,23 @@
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
-    color: rgb(181, 153, 0);
+    color: rgb(181, 153, 0); /* Färg för underrubriken */
     text-transform: uppercase;
-
 }
 
 .hero-KOTL .hero-text p {
     font-size: 18px; /* Textstorlek för paragrafen */
     line-height: 1.5; /* Gör texten mer läsbar */ 
     font-style: italic;
-    font-family: rubik, helvetica, arial, sans-serif;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
     color: #333; /* Standard textfärg */
     margin: 0 auto; /* Centrera paragrafen */
     width: 80%; /* Justera bredden på textblocket */
-    text-align: justify; /* Jämna ut texten till båda kanterna */
+    text-align: justify; /* Justera texten till båda kanterna */
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* Övriga stilar */
+.spacing {
+    height: 50px; /* Justera höjden efter behov */
 }

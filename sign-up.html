@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadow Fight Arena - Sign Up</title>
-    <!--Below is the link to the font for the title-->
-    <link href="https://fonts.cdnfonts.com/css/brush-strokes" rel="stylesheet" href="styles.css">
-    <!--Below row is for the link of font awesome fb icon-->
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/brush-strokes" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="icon" type="image/x-icon" href="Replicated_website_photos/sfa_loga.webp">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="sign-up.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Replicated_website_photos/sfa_loga.webp">
+
 </head>
 
 <body>
-
     <div class="wrapper">
+
+        <!-- Header -->
         <header class="header">
             <div class="logo">
                 <a href="home-view.html" target="_parent">
@@ -31,43 +41,45 @@
             </div>
 
             <div class="header-right">
-                <!-- Språkväxlare -->
+                <!-- Language Selector -->
                 <div class="language-selector">
                     <a href="#">English</a>
                     <a href="#">Svenska</a>
                 </div>
-                <a href="sign-up.html" class="sign-up">Sign Up</a>
+                <a href="sign-up.html" class="sign-up-button">Sign Up</a>
             </div>
         </header>
 
+        <!-- Navigation Menu -->
         <nav class="main-menu">
             <ul class="unordered">
-                <li><a href="home-view.html">Home</a></li> <!-- Länk till huvudsidan -->
+                <li><a href="home-view.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="heroes.html">Heroes</a></li>
                 <li><a href="press.html">Press</a></li>
             </ul>
         </nav>
 
+        <!-- Newsletter Sign Up Form -->
         <div class="title">NEWSLETTER SIGNUP</div>
-
-        <!-- Formulärstart med en klass för styling -->
         <form action="#" class="join_form">
             <!-- Email Input -->
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="id_email" class="form-control required"
-                    placeholder="Enter your email">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"required>
             </div>
 
             <!-- Birthdate Title -->
-            <div class="form-birthdate-title">Birthdate</div>
+            <div class="form-birthdate-title"></div>
+
             <!-- Birthdate Input -->
             <div class="form-row">
                 <!-- Month Dropdown -->
-                <div class="form-group form-group-col">
+                <div class="form-group">
                     <div class="dropdown-container">
-                        <select class="selectable" id="id_month" name="month" required>
+                        <label for="month">Month</label>
+                        <select class="selectable" id="month" name="month" required>
+                            <option value="" disabled selected>Select month</option>
                             <option value="01">January</option>
                             <option value="02">February</option>
                             <option value="03">March</option>
@@ -85,29 +97,39 @@
                 </div>
 
                 <!-- Day Input -->
-                <div class="form-group form-group-col">
-                    <input type="text" name="day" class="form-control required" id="id_day" placeholder="DD"
-                        maxlength="2" pattern="\d{2}">
+                <div class="form-group">
+                    <label for="day">Day</label>
+                    <input type="text" name="day" class="form-control" id="day" placeholder="DD" maxlength="2"
+                        pattern="\d{2}" required>
                 </div>
 
                 <!-- Year Input -->
-                <div class="form-group form-group-col">
-                    <input type="text" name="year" class="form-control required" id="id_year" placeholder="YYYY"
-                        maxlength="4" pattern="\d{4}">
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input type="text" name="year" class="form-control" id="year" placeholder="YYYY" maxlength="4"
+                        pattern="\d{4}" required>
                 </div>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="submit-button">Submit</button>
+            <input class="btn btn-primary" type="submit" value="Submit">
         </form>
 
+        <!-- Footer -->
         <footer class="site-footer">
             <div class="footer-container">
-                <!-- Första sektionen: SVG-bilder med länkar -->
+                <!-- Social Links and Logos -->
                 <div class="footer-top">
                     <nav class="social-links">
-                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <a href="https://www.facebook.com/shadowfightarena/" target="_blank" class="social-icon-fb">
                             <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/SFArenaGame" target="_blank" class="social-icon-twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCckHBcinJJKHKi9sBEpGARA" target="_blank"
+                            class="social-icon-yt">
+                            <i class="fa-brands fa-youtube"></i>
                         </a>
                     </nav>
 
@@ -115,29 +137,27 @@
                         <div class="footer-logo-list-item">
                             <a href="https://nekki.com/" class="logo-link-nekki" target="_blank"></a>
                         </div>
-
                         <div class="footer-logo-list-item">
                             <a href="https://shadowfight.com/" class="logo-link-sfa" target="_blank"></a>
                         </div>
-
                         <div class="footer-logo-list-item">
                             <a href="https://shadowfight3.com/" class="logo-link-sf3" target="_blank"></a>
                         </div>
                     </section>
 
-                    <!-- Lägg till fler logo-link divs här vid behov -->
-
-                    <nav class="stores-icons">
-                        <a href="https://play.google.com/store" target="_blank" class="store-icon">
-                            <img src="path/to/playstore-icon.png" alt="Google Play">
+                    <nav class="store-icons">
+                        <a href="https://apps.apple.com/ca/app/shadow-fight-4-arena/id1479050948" target="_blank"
+                            class="store-icon">
+                            <img src="Replicated_website_photos/app-store.svg" alt="App Store">
                         </a>
-                        <a href="https://www.apple.com/app-store/" target="_blank" class="store-icon">
-                            <img src="path/to/appstore-icon.png" alt="App Store">
+                        <a href="https://play.google.com/store/apps/details?id=com.nekki.shadowfightarena"
+                            target="_blank" class="store-icon">
+                            <img src="Replicated_website_photos/play-store.svg" alt="Google Play">
                         </a>
-                        <!-- Lägg till fler store-ikoner här -->
                     </nav>
                 </div>
-                <!-- Andra sektionen: Copyright-information -->
+
+                <!-- Copyright Information -->
                 <div class="footer-bottom">
                     <p>&copy; 2018-2024, Nekki Limited. All rights reserved.
                         Shadow Fight Arena and its logo are Nekki trademarks or registered trademarks in the EU and
@@ -149,6 +169,10 @@
         </footer>
     </div>
 
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,46 +1,53 @@
-/* Grunder för gallery och gallery-item */
+/* Stil för gallery-title */
 .gallery-title {
     font-size: 2em; /* Justera storleken på rubriken */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left; /* Centrerar texten på sidan */
-    margin: 20px 0; /* Lägg till marginaler ovanför och under rubriken */
-    color: #2c5d6f; /* Anpassa färgen efter din design */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left; /* Vänsterjusterad text */
+    margin: 20px 0; /* Marginal ovanför och under rubriken */
+    color: #2c5d6f; /* Färg på rubriken */
 }
 
+/* Grundlayout för gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Skapar en flexibel gridlayout med bilder */
+    grid-template-columns: repeat(3, 1fr); /* Gridlayout med tre kolumner */
     gap: 20px; /* Avstånd mellan bilderna */
-    justify-content: center; /* Centrerar bilderna i rader */
+    justify-content: center; /* Centrerar bilderna horisontellt */
 }
 
+/* Stil för gallery-item */
 .gallery-item {
     display: flex;
     flex-direction: column; /* Ställer in bilder och text i kolumn */
-    align-items: stretch; /* Gör så att bilden och texten sträcker sig över hela bredden */
+    align-items: stretch; /* Låter bild och text sträcka sig över hela bredden */
 }
 
 .gallery-item img {
-    width: 100%; /* Bilden sträcker sig över hela bredden av sin container */
+    width: 100%; /* Bilden fyller sin container */
     height: auto; /* Bevarar bildens proportioner */
 }
 
+.gallery-item video {
+    width: 100%;
+    height: auto;
+}
+
+/* Stil för bildbeskrivningar */
 .image-description {
     padding: 10px 0; /* Padding runt texten */
-    text-align: left; /* Texten börjar vid vänsterkanter */
-    font-size: 14px; /* Textstorlek för beskrivning */
-    line-height: 1.5; /* Radavstånd för läsbarhet */
+    text-align: left; /* Vänsterjusterad text */
+    font-size: 14px; /* Textstorlek för beskrivningen */
+    line-height: 1.5; /* Gör texten mer läsbar */
 }
 
 
-
-/* Media query för att justera layout på mindre skärmar */
+/* Media query för mindre skärmar */
 @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Justera kolumnstorlek på mindre skärmar */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Anpassar kolumnernas bredd */
     }
 
     .image-description {
-        font-size: 12px; /* Mindre textstorlek på mindre skärmar */
+        font-size: 12px; /* Mindre textstorlek på små skärmar */
     }
 }

@@ -1,3 +1,8 @@
+:root {
+    --text-description-color: #2c5d6f;
+}
+
+/*----------------------------------------------------------------------------------------------*/
 /* Gemensam stil för h2 och h3 */
 .description-text h2,
 .description-text h3 {
@@ -5,7 +10,7 @@
     text-align: left;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    color: #2c5d6f;
+    color: var(--text-description-color);
     font-size: 20px; /* Textstorlek för h2 och h3 */
     line-height: 1.5; /* Gör texten mer läsbar */
     margin: 0 auto; /* Centrera elementet */
@@ -13,13 +18,13 @@
 }
 
 .description-text h3 {
-    font-size: 16px;
+    font-size: 16px; /* Specifik textstorlek för h3 */
 }
+
 /*----------------------------------------------------------------------------------------------*/
-/* Wrapper for description text class*/
+/* Wrapper för description-text class */
 .description-text {
     max-width: 600px;
-    padding: 0 20px;
     margin-bottom: 20px; /* Mellanrum mellan sektionerna */
 }
 
@@ -35,15 +40,18 @@
     margin-right: 0;
 }
 
-/* Stil för rubriker */
+/*----------------------------------------------------------------------------------------------*/
+/* Stil för rubriker (endast h2) */
 .description-text h2 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-/* Stil för text */
-.description-text p, .description-text i {
+/*----------------------------------------------------------------------------------------------*/
+/* Stil för text (p och i) */
+.description-text p,
+.description-text i {
     font-size: 15px;
     line-height: 1.6;
     font-family: 'Rubik', Helvetica, Arial, sans-serif;
@@ -51,13 +59,13 @@
     margin-top: 10px;
 }
 
-.styled-in-text-link {
+/*----------------------------------------------------------------------------------------------*/
+/* Länkar */
+.text-link {
     text-decoration: none;
-    color: #5285ac; /* Anger att länken alltid ska vara blå */
+    color: var(--text-description-color); /* Återanvändning av kod */
 }
 
-.styled-in-text-link:hover {
+.text-link:hover {
     text-decoration: underline;
 }
-
-

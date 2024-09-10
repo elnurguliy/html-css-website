@@ -25,17 +25,20 @@ body {
 /* Stil för logotypen */
 .logo img {
     display: flex;
-    max-height: 50px;
+    max-height: 3.5em;
     align-items: center;
 }
 
 /* Stil för texten bredvid loggan */
 .header-text {
-    flex-grow: 1;
+    flex-grow: 1;                     
+}
+
+.header-text h1 {
     color: #2c6d86;
-    font-size: 13px;
+    font-size: 1.5em;
     text-transform: uppercase;
-    font-family: 'Brush Strokes', sans-serif;                                       
+    font-family: 'Brush Strokes', sans-serif;    
 }
 
 /* Stil för språkväxlaren */
@@ -109,7 +112,7 @@ body {
     color: #ffffff;
 }
 
-.sign-up-knapp {
+.sign-up-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +127,6 @@ body {
     font-size: 1em;
 }
 
-/*----------------------------------------------------------------------------------------------*/
 /* Styling för hela footern */
 .site-footer {
     background-color: #a5c2c7;
