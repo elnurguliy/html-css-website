@@ -22,6 +22,7 @@
 /* Form group styling */
 .form-group {
     margin-bottom: 20px; /* Mellanrum under varje form-grupp */
+    flex: 1;
 }
 
 /* Label styling */
@@ -40,7 +41,6 @@ label {
     border-radius: 5px; /* Rundade hörn */
     box-sizing: border-box; /* Inkluderar padding i elementets totala bredd och höjd */
     height: 3rem; /* Sätt en enhetlig höjd för alla fält */
-    padding: 0.rem; /* Justera padding */
 }
 
 /* Container for birthdate fields */

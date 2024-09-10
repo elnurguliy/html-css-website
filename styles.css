@@ -37,6 +37,8 @@ body {
 .header-text h1 {
     color: #2c6d86;
     font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-transform: uppercase;
     font-family: 'Brush Strokes', sans-serif;    
 }
@@ -125,12 +127,13 @@ body {
     margin-top: 10px;
     padding: 1em 2em;
     font-size: 1em;
+    line-height: normal;
 }
+
 
 /* Styling för hela footern */
 .site-footer {
     background-color: #a5c2c7;
-    color: white;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
