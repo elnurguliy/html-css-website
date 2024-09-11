@@ -132,109 +132,82 @@ body {
 
 
 /* Styling för hela footern */
-.site-footer {
+.footer-container {
+    display: flex;
+    justify-content: space-between;
     background-color: #a5c2c7;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 50px;
-}
-
-/* Huvudcontainer för footern */
-.footer-container {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0, auto;
+       
 }
 
 /* Första behållaren: Loggor med länkar */
 .footer-top {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
 
 /* Social media ikoner */
-.social-links {
+.social-media {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
+
 /* Styling för varje social ikon */
-.social-links a {
+.social-media a {
     color: #fff;
     font-size: 24px;
     margin-right: 15px;
     text-decoration: none;
 }
 
-.social-icon-fb:hover {
+.facebook:hover {
     color: #1877F2;
 }
 
-.social-icon-twitter:hover {
+.twitter:hover {
     color: #1DA1F2;
 }
 
-.social-icon-yt:hover {
+.youtube:hover {
     color: #FF0000;
 }
 
-/* Flex för loggorna */
+/* Styla footer logotyper */
 .footer-logos {
+    margin-left: 10px;
     display: flex;
-    align-items: center;
-    flex-grow: 1;
     justify-content: center;
-    gap: 20px;
+    flex-grow: 1;
+    align-items: center;
+    gap: 20px; /* Avstånd mellan loggorna */
 }
 
-/* Loggor */
-.footer-logo-list-item {
-    margin: 0 10px;
+.footer-logo-item img {
+    width: 100px;  /* Du kan justera storleken efter behov */
+    height: auto;
 }
 
 /* Styla store-ikoner */
 .store-icons {
     margin-left: 10px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
 .store-icons img {
     width: 100px;
     height: auto;
-}
-
-/* Styling för varje logotyp */
-.logo-link-nekki {
-    background: url('Replicated_website_photos/Nekki_logo.svg') no-repeat center;
-    background-size: contain;
-    width: 100px;
-    height: 60px;
-    display: block;
-}
-
-.logo-link-sfa {
-    background: url('Replicated_website_photos/SF4_ARENA_LOGO.webp') no-repeat center;
-    background-size: contain;
-    width: 120px;
-    height: 80px;
-    display: block;
-}
-
-.logo-link-sf3 {
-    background: url('Replicated_website_photos/SF3Logo.png') no-repeat center;
-    background-size: contain;
-    width: 120px;
-    height: 80px;
-    display: block;
 }
 
 /* Andra behållaren: Textinformation */
