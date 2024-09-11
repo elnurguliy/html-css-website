@@ -172,6 +172,12 @@ body {
     text-decoration: none;
 }
 
+/* This class hides elements from view while keeping them accessible to screen readers */
+.visually-hidden {
+    position: absolute;  /* Removes the element from the normal document flow, positioning it relative to its nearest positioned ancestor */
+    clip: rect(0, 0, 0, 0);  /* Clips the element to a 0x0 rectangle, effectively hiding it from visual display */
+}
+
 .facebook:hover {
     color: #1877F2;
 }
