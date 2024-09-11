@@ -6,68 +6,68 @@
 
 }
 
-/* Explore sektionen */
+/* Explore section */
 .explore-text {
     text-align: center;
-    margin-top: 40px; /* Avstånd från menyraden */
-    margin-bottom: 20px; /* Avstånd mellan texten och hero-sektionen */
+    margin-top: 40px; /* Distance from menu bar */
+    margin-bottom: 20px; /* Distance between the text and the hero section */
 }
 
 .explore-text h2 {
     font-size: 25px;
-    color: #2c6d86; /* Justera färgen här */
+    color: var(--hero-h2-color); 
     text-transform: uppercase;
 }
 
-/* Hero-sektionen */
+/* Hero-section */
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f6f7f0; /* Bakgrundsfärg */
+    background-color: #f6f7f0;
 }
 
 .hero-image {
     max-width: 50%;
     height: auto;
-    margin-top: -100px; /* Justera efter behov */
+    margin-top: -100px; 
 }
 
-/* Hero Marcus - Textstilar */
+/* Hero Marcus - Textstyles */
 .hero-Marcus .hero-text h2 {
     font-size: var(--font-size-h2);
-    font-weight: bold; /* Fetstil på rubriken */
+    font-weight: bold; /* Bold on the title */
     color: var(--hero-h2-color);
-    text-align: left; /* Justera texten till vänster */
-    margin-bottom: 10px; /* Avstånd under rubriken */
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 10px; /* Space below the header */
 }
 
-/* Hero KOTL - Textstilar */
+/* Hero KOTL - Textstyles */
 .hero-KOTL .hero-text h2 {
     font-size: var(--font-size-h2);
-    font-weight: bold; /* Fetstil på rubriken */
-    color: var(--hero-h2-color); /* Välj en passande färg */
-    text-align: left; /* Justera texten till vänster */
-    margin-bottom: 10px; /* Avstånd under rubriken */
+    font-weight: bold; /* Bold on the title */
+    color: var(--hero-h2-color); 
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 10px; /* Space below the header */
 }
 
-/* Hero Itu - Textstilar */
+/* Hero Itu - Textstyles */
 .hero-Itu .hero-text h2 {
     font-size: var(--font-size-h2);
-    font-weight: bold; /* Fetstil på rubriken */
+    font-weight: bold; /* Bold on the title */
     color: var(--hero-h2-color);
-    text-align: left; /* Justera texten till vänster */
-    margin-bottom: 10px; /* Avstånd under rubriken */
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 10px; /* Space below the header */
 }
 
 /* Hero Ironclad - Textstilar */
 .hero-ironclad .hero-text h2 {
     font-size: var(--font-size-h2);
-    font-weight: bold; /* Fetstil på rubriken */
+    font-weight: bold; /* Bold on the title */
     color: var(--hero-h2-color);
-    text-align: left; /* Justera texten till vänster */
-    margin-bottom: 10px; /* Avstånd under rubriken */
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 10px; /* Space below the header */
 }
 
 
@@ -77,7 +77,7 @@
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
-    color: #8842cf; /* Färg för underrubriken */
+    color: #8842cf; /* Color for the subtitle */
     text-transform: uppercase;
 }
 
@@ -87,7 +87,7 @@
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
-    color: rgb(181, 153, 0); /* Färg för underrubriken */
+    color: rgb(181, 153, 0); /* Color for the subtitle */
     text-transform: uppercase;
 }
 
@@ -97,7 +97,7 @@
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
-    color: rgb(181, 153, 0); /* Färg för underrubriken */
+    color: rgb(181, 153, 0); /* Color for the subtitle */
     text-transform: uppercase;
 }
 
@@ -107,70 +107,70 @@
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
-    color: #555; /* Färg för underrubriken */
+    color: #555; /* Color for the subtitle */
     text-transform: uppercase;
 }
 
 .hero-Marcus .hero-text p {
-    font-size: 18px; /* Textstorlek för paragrafen */
-    line-height: 1.5; /* Gör texten mer läsbar */ 
+    font-size: 18px; /* Text size for the paragraph */
+    line-height: 1.5; /* Make the text more readable */
     font-style: italic;
     font-family: var(--font-family-p);
     color: var(--hero-descr-color);
-    margin: 0 auto; /* Centrera paragrafen */
-    width: 80%; /* Justera bredden på textblocket */
-    text-align: justify; /* Justera texten till båda kanterna */
+    margin: 0 auto; /* Center the paragraph */
+    width: 80%; /* Adjust the width of the text block */
+    text-align: justify; /* Align the text to both edges */
 }
 
 .hero-KOTL .hero-text p {
-    font-size: 18px; /* Textstorlek för paragrafen */
-    line-height: 1.5; /* Gör texten mer läsbar */ 
+    font-size: 18px; /* Text size for the paragraph */
+    line-height: 1.5; /* Make the text more readable */
     font-style: italic;
     font-family: var(--font-family-p);
     color: var(--hero-descr-color);
-    margin: 0 auto; /* Centrera paragrafen */
-    width: 80%; /* Justera bredden på textblocket */
-    text-align: justify; /* Justera texten till båda kanterna */
+    margin: 0 auto; /* Center the paragraph */
+    width: 80%; /* Adjust the width of the text block */
+    text-align: justify; /* Align the text to both edges */
 }
 
 
 .hero-Itu .hero-text p {
-    font-size: 18px; /* Textstorlek för paragrafen */
-    line-height: 1.5; /* Gör texten mer läsbar */ 
+    font-size: 18px; /* Text size for the paragraph */
+    line-height: 1.5; /* Make the text more readable */
     font-style: italic;
     font-family: var(--font-family-p);
     color: var(--hero-descr-color);
-    margin: 0 auto; /* Centrera paragrafen */
-    width: 80%; /* Justera bredden på textblocket */
-    text-align: justify; /* Justera texten till båda kanterna */
+    margin: 0 auto; /* Center the paragraph */
+    width: 80%; /* Adjust the width of the text block */
+    text-align: justify; /* Align the text to both edges */
 }
 
 .hero-Marcus .hero-text p {
-    font-size: 18px; /* Textstorlek för paragrafen */
-    line-height: 1.5; /* Gör texten mer läsbar */ 
+    font-size: 18px; /* Text size for the paragraph */
+    line-height: 1.5; /* Make the text more readable */
     font-style: italic;
     font-family: var(--font-family-p);
     color: var(--hero-descr-color);
-    margin: 0 auto; /* Centrera paragrafen */
-    width: 80%; /* Justera bredden på textblocket */
-    text-align: justify; /* Justera texten till båda kanterna */
+    margin: 0 auto; /* Center the paragraph */
+    width: 80%; /* Adjust the width of the text block */
+    text-align: justify; /* Align the text to both edges */
 }
 
 
 .hero-ironclad .hero-text p {
-    font-size: 18px; /* Textstorlek för paragrafen */
-    line-height: 1.5; /* Gör texten mer läsbar */
+    font-size: 18px; /* Text size for the paragraph */
+    line-height: 1.5; /* Make the text more readable */
     font-style: italic;
     font-family: var(--font-family-p);
     color: var(--hero-descr-color);
-    margin: 0 auto; /* Centrera paragrafen */
-    width: 80%; /* Justera bredden på textblocket */
-    text-align: justify; /* Justera texten till båda kanterna */
+    margin: 0 auto; /* Center the paragraph */
+    width: 80%; /* Adjust the width of the text block */
+    text-align: justify; /* Align the text to both edges */
 }
 
 
 
-/* Övriga stilar */
+/* Other styles */
 .spacing {
-    height: 50px; /* Justera höjden efter behov */
+    height: 50px; /* space between each heroe section */
 }

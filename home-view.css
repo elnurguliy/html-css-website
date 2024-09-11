@@ -1,9 +1,9 @@
+/* Variable for reuse of code */
 :root {
     --text-description-color: #2c5d6f;
 }
 
-/*----------------------------------------------------------------------------------------------*/
-/* Gemensam stil för h2 och h3 */
+/* Common style for h2 and h3 */
 .description-text h2,
 .description-text h3 {
     display: flex;
@@ -11,45 +11,42 @@
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     color: var(--text-description-color);
-    font-size: 20px; /* Textstorlek för h2 och h3 */
-    line-height: 1.5; /* Gör texten mer läsbar */
-    margin: 0 auto; /* Centrera elementet */
-    width: 100%; /* Justera bredden på textblocket */
+    font-size: 20px; /* Font size for h2 and h3 */
+    line-height: 1.5; /* Makes text more readable */
+    margin: 0 auto; /* Center the element */
+    width: 100%; /* Adjust the width of the text block */
 }
 
 .description-text h3 {
-    font-size: 16px; /* Specifik textstorlek för h3 */
+    font-size: 16px; /* Specific font size for h3 */
 }
 
-/*----------------------------------------------------------------------------------------------*/
-/* Wrapper för description-text class */
+/* Wrapper for description-text class */
 .description-text {
     max-width: 600px;
-    margin-bottom: 20px; /* Mellanrum mellan sektionerna */
+    margin-bottom: 20px; /* Space between sections */
 }
 
-/* Vänsterplacerad sektion (standard) */
+/* Left-aligned section (default) */
 .description-text.left {
     text-align: left;
     margin-left: 0;
 }
 
-/* Högerplacerad sektion */
+/* Right-aligned section */
 .description-text.right {
-    margin-left: auto; /* Flyttar sektionen till höger */
+    margin-left: auto; /* Moves the section to the right */
     margin-right: 0;
 }
 
-/*----------------------------------------------------------------------------------------------*/
-/* Stil för rubriker (endast h2) */
+/* Style for headings (only h2) */
 .description-text h2 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-/*----------------------------------------------------------------------------------------------*/
-/* Stil för text (p och i) */
+/* Style for text (p and i) */
 .description-text p,
 .description-text i {
     font-size: 15px;
@@ -59,11 +56,10 @@
     margin-top: 10px;
 }
 
-/*----------------------------------------------------------------------------------------------*/
-/* Länkar */
+/* Links */
 .text-link {
     text-decoration: none;
-    color: var(--text-description-color); /* Återanvändning av kod */
+    color: var(--text-description-color); /* Reuse of code */
 }
 
 .text-link:hover {

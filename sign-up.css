@@ -79,11 +79,6 @@ input[type=submit]:hover {
     background-color: #004a67; /* Background color on hover */
 }
 
-.language-selector {
-    display: flex;
-    margin-bottom: 10px;
-}
-
 .language-selector .btn-link {
     color: rgb(0, 100, 107);
     text-decoration: none;

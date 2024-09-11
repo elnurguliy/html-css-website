@@ -1,55 +1,55 @@
-/* Enkel styling för social media sektionen */
+/* Simple styling for the social media section */
 .follow-on-social-media {
-    text-align: center;           /* Centrerar texten och ikonerna */
-    margin-top: 20px;             /* Lite utrymme ovanför sektionen */
+    text-align: center;           /* Centers text and icons */
+    margin-top: 20px;             /* Adds space above the section */
 }
 
 .follow-on-social-media h2 {
-    font-size: 2rem;              /* En större rubrikstorlek */
-    margin-bottom: 10px;          /* Avstånd mellan rubrik och lista */
-    color: #2c6d86;               /* Färgen på rubriken */
+    font-size: 2rem;              /* Larger heading size */
+    margin-bottom: 10px;          /* Space between heading and list */
+    color: #2c6d86;               /* Color of the heading */
 }
 
 .follow-on-social-media ul {
     list-style: none;
     padding: 0;
-    display: flex;                /* Flexbox för att placera ikonerna på samma rad */
-    justify-content: center;      /* Centrerar ikonerna horisontellt */
-    gap: 20px;                    /* Mellanrum mellan ikonerna */
+    display: flex;                /* Flexbox to place icons in a row */
+    justify-content: center;      /* Centers icons horizontally */
+    gap: 20px;                    /* Space between icons */
 }
 
 .follow-on-social-media li {
-    display: flex;                /* Flexbox för att få ikonen och texten på samma rad */
-    align-items: center;          /* Vertikal centrering av ikonen med texten */
+    display: flex;                /* Flexbox to align icon and text in a row */
+    align-items: center;          /* Vertically centers icon with text */
 }
 
 .follow-on-social-media i {
-    font-size: 30px;              /* Storlek på ikoner */
-    margin-right: 8px;            /* Avstånd mellan ikon och text */
+    font-size: 30px;              /* Size of the icons */
+    margin-right: 8px;            /* Space between icon and text */
 }
 
-/* Specifika färger för varje ikon */
+/* Specific colors for each icon */
 .follow-on-social-media .twitter i {
-    color: #1DA1F2;               /* Twitter blå */
+    color: #1DA1F2;               /* Twitter blue */
 }
 
 .follow-on-social-media .facebook i {
-    color: #3b5998;               /* Facebook blå */
+    color: #3b5998;               /* Facebook blue */
 }
 
 .follow-on-social-media .youtube i {
-    color: #FF0000;               /* YouTube röd */
+    color: #FF0000;               /* YouTube red */
 }
 
 .follow-on-social-media a {
-    text-decoration: none;        /* Ingen understrykning på länkar */
-    color: #333;                  /* Standard textfärg */
+    text-decoration: none;        /* No underline on links */
+    color: #333;                  /* Standard text color */
 }
 
 .follow-on-social-media a:hover {
-    color: #000000;               /* Textfärg vid hover */
+    color: #000000;               /* Text color on hover */
 }
 
 .follow-on-social-media a:hover i {
-    opacity: 0.8;                 /* Ikonen blir lite genomskinlig vid hover */
+    opacity: 0.8;                 /* Icon becomes slightly transparent on hover */
 }

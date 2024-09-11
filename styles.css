@@ -54,6 +54,10 @@ body {
     margin-left: 10px;
 }
 
+.language-selector a:hover {
+    text-decoration: underline;
+}
+
 /* Navigation menu style */
 .main-menu {
     background-color: #f4f4f4;
