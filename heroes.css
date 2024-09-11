@@ -3,174 +3,83 @@
     --hero-descr-color: #333;
     --font-size-h2: 25px;
     --font-family-p: 'Rubik', Helvetica, Arial, sans-serif;
-
+    --hero-h3-color: rgb(181, 153, 0)
 }
 
-/* Explore section */
+.hero-Itu .hero-text h3,
+.hero-KOTL .hero-text h3,
+.hero-Marcus .hero-text h3,
+.hero-june .hero-text h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 26px;
+    text-transform: uppercase
+}
+
 .explore-text {
     text-align: center;
-    margin-top: 40px; /* Distance from menu bar */
-    margin-bottom: 20px; /* Distance between the text and the hero section */
+    margin-top: 40px;
+    margin-bottom: 20px
 }
 
 .explore-text h2 {
     font-size: 25px;
-    color: var(--hero-h2-color); 
-    text-transform: uppercase;
+    color: var(--hero-h2-color);
+    text-transform: uppercase
 }
 
-/* Hero-section */
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f6f7f0;
+    background-color: #f6f7f0
 }
 
 .hero-image {
     max-width: 50%;
     height: auto;
-    margin-top: -100px; 
+    margin-top: -100px
 }
 
-/* Hero Marcus - Textstyles */
-.hero-Marcus .hero-text h2 {
+.hero-Itu .hero-text h2,
+.hero-KOTL .hero-text h2,
+.hero-Marcus .hero-text h2,
+.hero-june .hero-text h2 {
     font-size: var(--font-size-h2);
-    font-weight: bold; /* Bold on the title */
+    font-weight: 700;
     color: var(--hero-h2-color);
-    text-align: left; /* Align the text to the left */
-    margin-bottom: 10px; /* Space below the header */
+    text-align: left;
+    margin-bottom: 10px
 }
 
-/* Hero KOTL - Textstyles */
-.hero-KOTL .hero-text h2 {
-    font-size: var(--font-size-h2);
-    font-weight: bold; /* Bold on the title */
-    color: var(--hero-h2-color); 
-    text-align: left; /* Align the text to the left */
-    margin-bottom: 10px; /* Space below the header */
-}
-
-/* Hero Itu - Textstyles */
-.hero-Itu .hero-text h2 {
-    font-size: var(--font-size-h2);
-    font-weight: bold; /* Bold on the title */
-    color: var(--hero-h2-color);
-    text-align: left; /* Align the text to the left */
-    margin-bottom: 10px; /* Space below the header */
-}
-
-/* Hero Ironclad - Textstilar */
-.hero-ironclad .hero-text h2 {
-    font-size: var(--font-size-h2);
-    font-weight: bold; /* Bold on the title */
-    color: var(--hero-h2-color);
-    text-align: left; /* Align the text to the left */
-    margin-bottom: 10px; /* Space below the header */
-}
-
-
-.hero-Marcus .hero-text h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: normal;
+.hero-Marcus .hero-text h3 {
     font-size: 18px;
-    line-height: 26px;
-    color: #8842cf; /* Color for the subtitle */
-    text-transform: uppercase;
+    color: #8842cf
 }
 
-.hero-KOTL .hero-text h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: normal;
+.hero-Itu .hero-text h3,
+.hero-KOTL .hero-text h3,
+.hero-june .hero-text h3 {
     font-size: 18px;
-    line-height: 26px;
-    color: rgb(181, 153, 0); /* Color for the subtitle */
-    text-transform: uppercase;
+    color: var(--hero-h3-color)
 }
 
-.hero-Itu .hero-text h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: normal;
+.hero-Itu .hero-text p,
+.hero-KOTL .hero-text p,
+.hero-Marcus .hero-text p,
+.hero-june .hero-text p {
     font-size: 18px;
-    line-height: 26px;
-    color: rgb(181, 153, 0); /* Color for the subtitle */
-    text-transform: uppercase;
-}
-
-.hero-ironclad .hero-text h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 26px;
-    color: #555; /* Color for the subtitle */
-    text-transform: uppercase;
-}
-
-.hero-Marcus .hero-text p {
-    font-size: 18px; /* Text size for the paragraph */
-    line-height: 1.5; /* Make the text more readable */
+    line-height: 1.5;
     font-style: italic;
     font-family: var(--font-family-p);
     color: var(--hero-descr-color);
-    margin: 0 auto; /* Center the paragraph */
-    width: 80%; /* Adjust the width of the text block */
-    text-align: justify; /* Align the text to both edges */
+    margin: 0 auto;
+    width: 80%;
+    text-align: justify
 }
 
-.hero-KOTL .hero-text p {
-    font-size: 18px; /* Text size for the paragraph */
-    line-height: 1.5; /* Make the text more readable */
-    font-style: italic;
-    font-family: var(--font-family-p);
-    color: var(--hero-descr-color);
-    margin: 0 auto; /* Center the paragraph */
-    width: 80%; /* Adjust the width of the text block */
-    text-align: justify; /* Align the text to both edges */
-}
-
-
-.hero-Itu .hero-text p {
-    font-size: 18px; /* Text size for the paragraph */
-    line-height: 1.5; /* Make the text more readable */
-    font-style: italic;
-    font-family: var(--font-family-p);
-    color: var(--hero-descr-color);
-    margin: 0 auto; /* Center the paragraph */
-    width: 80%; /* Adjust the width of the text block */
-    text-align: justify; /* Align the text to both edges */
-}
-
-.hero-Marcus .hero-text p {
-    font-size: 18px; /* Text size for the paragraph */
-    line-height: 1.5; /* Make the text more readable */
-    font-style: italic;
-    font-family: var(--font-family-p);
-    color: var(--hero-descr-color);
-    margin: 0 auto; /* Center the paragraph */
-    width: 80%; /* Adjust the width of the text block */
-    text-align: justify; /* Align the text to both edges */
-}
-
-
-.hero-ironclad .hero-text p {
-    font-size: 18px; /* Text size for the paragraph */
-    line-height: 1.5; /* Make the text more readable */
-    font-style: italic;
-    font-family: var(--font-family-p);
-    color: var(--hero-descr-color);
-    margin: 0 auto; /* Center the paragraph */
-    width: 80%; /* Adjust the width of the text block */
-    text-align: justify; /* Align the text to both edges */
-}
-
-
-
-/* Other styles */
 .spacing {
-    height: 50px; /* space between each heroe section */
+    height: 50px
 }

@@ -1,52 +1,48 @@
-/* Style for gallery title */
 .gallery-title {
-    font-size: 2em; /* Adjust the size of the title */
+    font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left; /* Align text to the left */
-    margin: 20px 0; /* Margin above and below the title */
-    color: #2c5d6f; /* Color of the title */
+    text-align: left;
+    margin: 20px 0;
+    color: #2c5d6f
 }
 
-/* Basic layout for gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Grid layout with three columns */
-    gap: 20px; /* Space between images */
-    justify-content: center; /* Center images horizontally */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center
 }
 
-/* Style for gallery items */
 .gallery-item {
     display: flex;
-    flex-direction: column; /* Arranges image and text in a column */
-    align-items: stretch; /* Allows image and text to stretch across the full width */
+    flex-direction: column;
+    align-items: stretch
 }
 
-.gallery-item img {
-    width: 100%; /* Image fills its container */
-    height: auto; /* Maintains image aspect ratio */
-}
-
+.gallery-item img,
 .gallery-item video {
     width: 100%;
-    height: auto;
+    height: auto
 }
 
-/* Style for image descriptions */
 .image-description {
-    padding: 10px 0; /* Padding around the text */
-    text-align: left; /* Align text to the left */
-    font-size: 14px; /* Text size for the description */
-    line-height: 1.5; /* Makes text more readable */
+    padding: 10px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width:768px) {
+    /* Adjust gallery layout for screens 768px wide or smaller */
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusts column width */
+        /* Create a responsive grid with columns that auto-fill based on available space,
+           each column will be at least 150px wide */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
+    /* Adjust image description text size for smaller screens */
     .image-description {
-        font-size: 12px; /* Smaller text size on small screens */
+        /* Set a smaller font size for image descriptions on small screens */
+        font-size: 12px;
     }
 }

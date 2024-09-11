@@ -1,55 +1,53 @@
-/* Simple styling for the social media section */
 .follow-on-social-media {
-    text-align: center;           /* Centers text and icons */
-    margin-top: 20px;             /* Adds space above the section */
+    text-align: center;
+    margin-top: 20px
 }
 
 .follow-on-social-media h2 {
-    font-size: 2rem;              /* Larger heading size */
-    margin-bottom: 10px;          /* Space between heading and list */
-    color: #2c6d86;               /* Color of the heading */
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c6d86
 }
 
 .follow-on-social-media ul {
     list-style: none;
     padding: 0;
-    display: flex;                /* Flexbox to place icons in a row */
-    justify-content: center;      /* Centers icons horizontally */
-    gap: 20px;                    /* Space between icons */
+    display: flex;
+    justify-content: center;
+    gap: 20px
 }
 
 .follow-on-social-media li {
-    display: flex;                /* Flexbox to align icon and text in a row */
-    align-items: center;          /* Vertically centers icon with text */
+    display: flex;
+    align-items: center
 }
 
 .follow-on-social-media i {
-    font-size: 30px;              /* Size of the icons */
-    margin-right: 8px;            /* Space between icon and text */
+    font-size: 30px;
+    margin-right: 8px
 }
 
-/* Specific colors for each icon */
 .follow-on-social-media .twitter i {
-    color: #1DA1F2;               /* Twitter blue */
+    color: #1da1f2
 }
 
 .follow-on-social-media .facebook i {
-    color: #3b5998;               /* Facebook blue */
+    color: #3b5998
 }
 
 .follow-on-social-media .youtube i {
-    color: #FF0000;               /* YouTube red */
+    color: red
 }
 
 .follow-on-social-media a {
-    text-decoration: none;        /* No underline on links */
-    color: #333;                  /* Standard text color */
+    text-decoration: none;
+    color: #333
 }
 
 .follow-on-social-media a:hover {
-    color: #000000;               /* Text color on hover */
+    color: #000
 }
 
 .follow-on-social-media a:hover i {
-    opacity: 0.8;                 /* Icon becomes slightly transparent on hover */
+    opacity: .8
 }
