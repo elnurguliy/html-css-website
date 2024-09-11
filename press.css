@@ -1,55 +1,55 @@
 /* Enkel styling för social media sektionen */
-.social-media {
+.follow-on-social-media {
     text-align: center;           /* Centrerar texten och ikonerna */
     margin-top: 20px;             /* Lite utrymme ovanför sektionen */
 }
 
-.social-media h2 {
+.follow-on-social-media h2 {
     font-size: 2rem;              /* En större rubrikstorlek */
     margin-bottom: 10px;          /* Avstånd mellan rubrik och lista */
     color: #2c6d86;               /* Färgen på rubriken */
 }
 
-.social-media ul {
-    list-style: none;             /* Ta bort standard bullets */
+.follow-on-social-media ul {
+    list-style: none;
     padding: 0;
     display: flex;                /* Flexbox för att placera ikonerna på samma rad */
     justify-content: center;      /* Centrerar ikonerna horisontellt */
     gap: 20px;                    /* Mellanrum mellan ikonerna */
 }
 
-.social-media li {
+.follow-on-social-media li {
     display: flex;                /* Flexbox för att få ikonen och texten på samma rad */
     align-items: center;          /* Vertikal centrering av ikonen med texten */
 }
 
-.social-media i {
+.follow-on-social-media i {
     font-size: 30px;              /* Storlek på ikoner */
     margin-right: 8px;            /* Avstånd mellan ikon och text */
 }
 
 /* Specifika färger för varje ikon */
-.social-media .twitter i {
+.follow-on-social-media .twitter i {
     color: #1DA1F2;               /* Twitter blå */
 }
 
-.social-media .facebook i {
+.follow-on-social-media .facebook i {
     color: #3b5998;               /* Facebook blå */
 }
 
-.social-media .youtube i {
+.follow-on-social-media .youtube i {
     color: #FF0000;               /* YouTube röd */
 }
 
-.social-media a {
+.follow-on-social-media a {
     text-decoration: none;        /* Ingen understrykning på länkar */
     color: #333;                  /* Standard textfärg */
 }
 
-.social-media a:hover {
+.follow-on-social-media a:hover {
     color: #000000;               /* Textfärg vid hover */
 }
 
-.social-media a:hover i {
+.follow-on-social-media a:hover i {
     opacity: 0.8;                 /* Ikonen blir lite genomskinlig vid hover */
 }
