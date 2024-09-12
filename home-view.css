@@ -51,7 +51,7 @@
 
 .text-link {
     text-decoration: none;
-    color: var(--text-description-color)
+    color: #0088b5;
 }
 
 .text-link:hover {
